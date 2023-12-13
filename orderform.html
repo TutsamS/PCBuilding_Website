@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Order Form</title>
+<style>
+	body {
+		background-image: url("https://i.redd.it/232fq3oh1ny51.jpg");
+		background-repeat: no-repeat;
+		background-size: 1920px;
+		background-attachment: fixed;
+	}
+	.styleform {
+		background-color: lightskyblue;
+		color: black;
+		font-family: Arial, Helvetica, sans-serif;
+		border-radius: 5px;
+		font-size: 24px;
+	}
+	.styleform2 {
+		background-color: lightskyblue;
+		color: black;
+		font-family: Arial, Helvetica, sans-serif;
+		border-radius: 10px;
+		font-size: 40px;
+	}
+	</style>
+<script type="text/javascript">
+	const params = new URLSearchParams(document.location.search);
+	const pid = params.get("pid");
+	const thePrice = params.get("price");
+
+	window.onpageshow = domainRef;
+
+    function domainRef() {
+      document.getElementById("txtPro").value = pid;
+      document.getElementById("txtPrice").value = thePrice;
+      document.getElementById("txtOid").value = Math.floor(Math.random() * 100000);
+    }
+</script>
+</head>
+<body>
+<div>
+<fieldset>
+<legend align="center" valign="middle" class="styleform2"><b>Place an Order For Your PC</b></legend>
+<form name="frmOrder" method="post" action="ordercreate.php">
+<p>
+<label for="Price"><span class="styleform">Price: </span></label>
+<input type="text" name="txtPrice" id="txtPrice">
+</p>
+<p>
+<label for="Product"><span class="styleform">Product ID: </span></label>
+<input type="text" name="txtPro" id="txtPro">
+</p>
+<p>
+<label for="OrderId"><span class="styleform">Order ID: </span></label>
+<input type="text" name="txtOid" id="txtOid" disabled>
+</p>
+<p>
+<label for="FName"><span class="styleform">First Name: </span></label>
+<input type="text" name="txtFName" id="txtFName">
+</p>
+<p>
+<label for="LName"><span class="styleform">Last Name: </span></label>
+<input type="text" name="txtLName" id="txtLName">
+</p>
+<p>
+<label for="Address"><span class="styleform">Address: </span></label>
+<input type="text" name="txtAddr" id="txtAddr">
+</p>
+<p>
+<label for="City"><span class="styleform">City: </span></label>
+<input type="text" name="txtCity" id="txtCity">
+</p>
+<p>
+<label for="State"><span class="styleform">State: </span></label>
+<input type="text" name="txtState" id="txtState">
+</p>
+<p>
+<label for="Zip"><span class="styleform">Zip: </span></label>
+<input type="text" name="txtZip" id="txtZip">
+</p>
+<p>
+<label for="Email"><span class="styleform">Email: </span></label>
+<input type="text" name="txtEmail" id="txtEmail">
+</p>
+<p>
+<label for="Phone"><span class="styleform">Phone: </span></label>
+<input type="text" name="txtPhone" id="txtPhone">
+</p>
+<p>&nbsp;</p>
+<p>
+<input type="submit" name="Submit" id="Submit" value="Submit">
+</p>
+</form>
+</fieldset>
+</div>
+<div align="center" valign="middle">
+	<p>
+		<span style="font-size: 36px; cursor: pointer; color: lightskyblue;" onclick=mclick() onmouseover="mover(this)" onmouseout="mout(this)"><b>Go back to Budgets page.</b></span>
+	</p>
+</div>
+<script>    
+    
+	function mover(thecell) {
+		thecell.style.color='white'
+	}
+	
+	function mout(thecell) {
+		thecell.style.color='lightskyblue'
+	}
+
+	function mclick() {
+		location.href = "/Period-1/budgets.html"
+	}
+	</script>
+</body>
+</html>

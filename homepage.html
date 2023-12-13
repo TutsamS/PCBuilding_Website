@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+        h1 {text-align: center;}
+        h2 {text-align: center;}                                
+        p {text-align: center;}
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Create two equal columns that floats next to each other */
+    .column1 {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 300px; /* Should be removed. Only for demonstration */
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+</style>
+    
+
+</head>
+
+<body>
+    
+    <h1 align="center" valign="middle" style= "background-color:lightskyblue; border-radius: 10px; font-family:'Times New Roman', Times, serif;">Top 10 PC Builds Just For You</h1>
+
+    <div class="topnav">
+        <a class="active" href="homepage.html">Home</a>
+        <a href="budgets.html">Budgets</a>
+        <a href="orders.php">Orders</a>
+            <div valign="middle" class="row">
+                <div class="column"><img src="https://www.logo.wine/a/logo/Ryzen/Ryzen-AMD-White-Dark-Background-Logo.wine.svg" alt= "amd" style="position:absolute; width:5%; height:5%;">
+                </div>
+                <div class="column"><img src="https://iconape.com/wp-content/files/tm/352706/svg/352706.svg" alt= "nvidia" style="position:absolute; width:5%; height:5%;">
+                </div>
+                <div class="column"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Intel_Core_2020_logo.svg/1200px-Intel_Core_2020_logo.svg.png" alt= "intel" style="position:absolute; width:3%; height:5%;">
+                </div>
+                <div class="column"><img src="https://logodownload.org/wp-content/uploads/2014/09/msi-logo-1.png" alt= "msi" style="position:absolute; width:8%; height:5%;">
+                </div>
+                <div class="column"><img src="https://www.pngkey.com/png/full/360-3602841_corsair-png-file-corsair-logo-horizontal-png-shopify.png" alt= "corsair" style="position:absolute; width:10%; height:4.8%;">
+                </div>
+            </div>
+    </div>
+    <div>
+        <h1>
+            The Best Selling PCs
+        </h1>
+    </div>
+    <div class="row">
+        <table width="50%" border="0">
+            <tr>
+              <td style="box-shadow: 5px 10px gray; background-color: white; border-radius: 15px;" align="center" valign="middle"><img src="https://cdn.thefpsreview.com/wp-content/uploads/2020/07/lian-li-lancool-ii-mesh-rgb-case.jpg" style="height:300px"/></td>
+            </tr>
+            <tr>
+                <td style="box-shadow: 5px 10px gray; background-color: lightskyblue; border-radius: 15px;">
+                    <ul style="list-style-type: none;">
+            
+                        <li><b><span class="note2">CPU:</span></b> Ryzen 7 5800X</li>
+                        <li><b><span class="note2">Motherboard:</span></b> MSI MAG B550 Tomahawk</li>
+                        <li><b><span class="note2">Memory:</span></b> Corsair Vengeance RGB Pro 32GB</li>
+                        <li><b><span class="note2">Storage:</span></b> Samsung 970 Evo 2tb M.2 and Seagate 2tb</li>
+                        <li><b><span class="note2">GPU:</span></b> EVGA RTX 3070 Ti</li>
+                        <li><b><span class="note2">Case:</span></b> Lian Li Lancool II</li>
+                        <li><b><span class="note2">Power Supply:</span></b> EVGA 750 W Gold Certified</li>
+                        <li><a style="text-decoration: none;" href="https://pcpartpicker.com/list/qw32K3"><b><span style="font-size: 24px; color:black; cursor: pointer;" onmouseover="mover2(this)" onmouseout="mout2(this)">Navigate to this PC's website.</span></b></a></li>
+                    </ul> 
+                </td> 
+            </tr>
+        </table>
+    
+        <table width="50%" border="0">
+            <tr>
+                <td style="box-shadow: 5px 10px gray; background-color: white; border-radius: 15px;" align="center" valign="middle"><img src="https://cdna.pcpartpicker.com/static/forever/images/userbuild/296175.3a65d054e7f3989aca0b500049d19b2a.jpg" style="height:300px"/></td>
+            </tr>
+            <tr>
+                <td style="box-shadow: 5px 10px gray; background-color: lightskyblue; border-radius: 15px;">
+                    <ul style="list-style-type: none;">
+              
+                        <li><b><span class="note2">CPU:</span></b> Ryzen 5 5600G</li>
+                        <li><b><span class="note2">Motherboard:</span></b> Asus ROG STRIX B550</li>
+                        <li><b><span class="note2">Memory:</span></b> Corsair Vengeance RGB pro 32GB</li>
+                        <li><b><span class="note2">Storage:</span></b> Seagate 2tb and Samsung 980 Pro 2tb M.2</li>
+                        <li><b><span class="note2">GPU:</span></b>RTX 3090 Founders Edition</li>
+                        <li><b><span class="note2">Case:</span></b> Cooler Master Masterbox</li>
+                        <li><b><span class="note2">Power Supply:</span></b> EVGA G3 750 Gold Certified</li>
+                        <li><a style="text-decoration: none;" href="https://pcpartpicker.com/list/GcMnsX"><b><span style="font-size: 24px; color:black; cursor: pointer;" onmouseover="mover2(this)" onmouseout="mout2(this)">Navigate to this PC's website.</span></b></a></li>
+                     </ul> 
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+</div>
+</body>
+</html>
