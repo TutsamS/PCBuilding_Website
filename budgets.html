@@ -17,6 +17,10 @@
             font-size: 18px;
             color: black;
 }
+        .column1 {
+        float: right;
+        width: 10%;
+}
     </style>
 </head>
 
@@ -28,18 +32,18 @@
         <a href="homepage.html">Home</a>
         <a class="active" href="budgets.html">Budgets</a>
         <a href="orders.php">Orders</a>
-          <div align="left" valign="middle" class="row">
-            <div class="column"><img src="https://www.logo.wine/a/logo/Ryzen/Ryzen-AMD-White-Dark-Background-Logo.wine.svg" alt= "amd" style="position:absolute; width:5%; height:5%;">
+          <div valign="middle" class="row">
+                <div class="column1"><img src="https://res.cloudinary.com/corsair-pwa/image/upload/f_auto,q_auto/akamai/pdp/mp600/images/ryzen_logo.png" alt= "amd" style="position:absolute; height:5.3%;">
+                </div>
+                <div class="column"><img src="https://iconape.com/wp-content/files/tm/352706/svg/352706.svg" alt= "nvidia" style="position:absolute; height:5.4%;">
+                </div>
+                <div class="column"><img src="https://logos-world.net/wp-content/uploads/2021/09/Intel-Logo-2006-2020-700x394.png" alt= "intel" style="position:absolute; height:5.4%;">
+                </div>
+                <div class="column"><img src="https://logodownload.org/wp-content/uploads/2014/09/msi-logo-1.png" alt= "msi" style="position:absolute; height:5.4%;">
+                </div>
+                <div class="column"><img src="https://www.realgamers.asia/image/she2me/image/data/brand/360-3602841_corsair-png-file-corsair-logo-horizontal-png-shopify.png" alt= "corsair" style="position:absolute; height:5.4%;">
+                </div>
             </div>
-            <div class="column"><img src="https://iconape.com/wp-content/files/tm/352706/svg/352706.svg" alt= "nvidia" style="position:absolute; width:5%; height:5%;">
-            </div>
-            <div class="column"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Intel_Core_2020_logo.svg/1200px-Intel_Core_2020_logo.svg.png" alt= "intel" style="position:absolute; width:3%; height:5%;">
-            </div>
-            <div class="column"><img src="https://logodownload.org/wp-content/uploads/2014/09/msi-logo-1.png" alt= "msi" style="position:absolute; width:8%; height:5%;">
-            </div>
-            <div class="column"><img src="https://www.pngkey.com/png/full/360-3602841_corsair-png-file-corsair-logo-horizontal-png-shopify.png" alt= "corsair" style="position:absolute; width:10%; height:4.8%;">
-            </div>
-          </div>
       </div>
     <div align="middle" class="note">
         <table width="50%" border="0">
@@ -53,7 +57,7 @@
               <p><span style="color:yellow;"><b>TIP:</b></span> Click on the price above the PC to place an order!</p>
             </tr>
             <tr>
-              <td style="background-color: white; border-radius: 15px; box-shadow: 5px 10px gray;" align="center" valign="middle"><img src="https://www.phanteks.com/images/product/Eclipse-P300A/PH-EC300A-9.jpg" style="height:300px"/></td>
+              <td style="background-color: white; border-radius: 15px; box-shadow: 5px 10px gray;" align="center" valign="middle"><img src="https://www.wepc.com/wp-content/uploads/2023/02/Best-gaming-PC-build-under-700.jpg" style="height:300px"/></td>
             </tr>
             <tr>
               <td style="background-color: lightskyblue; border-radius: 15px; box-shadow: 5px 10px gray;">
@@ -322,7 +326,7 @@
         }
 
         function mclick(pr,pd) {
-            location.href = "/Period-1/orderform.html?pid="+pd+"&price="+pr;
+            location.href = "/orderform.html?pid="+pd+"&price="+pr;
         }
         function mover2(website) {
             website.style.color='white'
