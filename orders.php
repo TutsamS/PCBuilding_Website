@@ -77,7 +77,7 @@ $rs = mysqli_query($con, $query);
     <script>    
         function mclick() {
             
-            location.href = "/Period-1/orders.php?od="+document.getElementById("searchdata").value;
+            location.href = "/orders.php?od="+document.getElementById("searchdata").value;
         }
     </script>
 </body>
